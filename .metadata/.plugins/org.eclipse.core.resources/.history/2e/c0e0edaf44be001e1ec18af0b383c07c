@@ -1,0 +1,26 @@
+package tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import model.ContactManager;
+import model.ContactManagerLogic;
+
+public class TestContactManagementLogic {
+	private ContactManager contManager = new ContactManager("Oliver");
+	private ContactManagerLogic contManLogic = new ContactManagerLogic();
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@Test
+	public void TestContactName() {
+		String name = contManager.getName();
+		
+		assertEquals(name, "Oliver");
+	}
+
+}

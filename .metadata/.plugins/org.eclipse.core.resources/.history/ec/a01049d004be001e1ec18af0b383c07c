@@ -1,0 +1,15 @@
+/**
+ * @author deondaigh - dmdaigh
+ * CIS175 - Spring 2024
+ * Jan 28, 2024
+ */
+package model;
+
+/**
+ * 
+ */
+public class ContactManagerLogic {
+	public String addContact {
+		return "";
+	}
+}

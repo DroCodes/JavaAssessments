@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestContactManagementLogic" project="contactManager" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="tests.TestContactManagementLogic" time="0.022">
+    <testcase name="testNameNull" classname="tests.TestContactManagementLogic" time="0.0"/>
+    <testcase name="testContactName" classname="tests.TestContactManagementLogic" time="0.0"/>
+    <testcase name="testNameNotNull" classname="tests.TestContactManagementLogic" time="0.0"/>
+    <testcase name="testPrintContact" classname="tests.TestContactManagementLogic" time="0.022"/>
+  </testsuite>
+</testrun>

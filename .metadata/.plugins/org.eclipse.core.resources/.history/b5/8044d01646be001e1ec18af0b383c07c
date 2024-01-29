@@ -1,0 +1,30 @@
+/**
+ * @author deondaigh - dmdaigh
+ * CIS175 - Spring 2024
+ * Jan 28, 2024
+ */
+package model;
+
+/**
+ * 
+ */
+public class ContactManagerLogic {
+	public ContactManager addContact(String name) {
+		ContactManager contact = new ContactManager(name);
+		return contact;
+	}
+	
+	public ContactManager editContact(String name, String phone, String email) {
+		ContactManager contact = new ContactManager();
+		
+		contact.setName(name);
+		contact.setPhoneNumber(phone);
+		contact.setEmail(email);
+		
+		return contact;
+	}
+	
+	public String printContact(ContactManager contact) {
+		return "";
+	}
+}
