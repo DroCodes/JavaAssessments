@@ -20,7 +20,7 @@ import model.TeamList;
 public class TeamListHelper {
 	static EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("FootballTeams");
 	
-	public void insertItem(TeamList team) {
+	public void insertTeam(TeamList team) {
 		EntityManager em = emfactory.createEntityManager();
 		em.getTransaction().begin();
 		em.persist(team);
@@ -32,6 +32,13 @@ public class TeamListHelper {
 		EntityManager em = emfactory.createEntityManager();
 		List<TeamList> allItems = em.createQuery("SELECT i FROM TeamList i").getResultList();
 		return allItems;
+	}
+	
+	public TeamList searchForTeamById(int idToEdit) {
+		EntityManager em = emfactory.createEntityManager(); em.getTransaction().begin();
+		TeamList found = em.find(TeamList.class, idToEdit); em.close();
+		
+		return found; 
 	}
 	
 	public void deleteTeam(TeamList toDelete) {
